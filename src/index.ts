@@ -15,7 +15,9 @@ const quantity = async (dir: string) => {
 
 const quantityInstaller = () => {
   return {
-    name: "quantityInstaller",
+    name: "quantity",
+    describe: "运行 cloc 分析并统计代码量",
+    command: "quantity",
     setup: (cli: CAC) => {
       cli
         .command("quantity", "运行 cloc 分析并统计代码量")
